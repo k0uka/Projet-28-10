@@ -7,13 +7,13 @@
 }
 
 body {
-  font-family: "Press Start 2P", cursive; /* Police rétro */
   background-color: #07195a;
   color: #fff;
 }
 
 .menu {
   background-color: #ea4d4dd1;
+  font-family: "Press Start 2P", cursive; /* Police rétro */
   display: flex;
   justify-content: center;
   padding: 15px;
@@ -140,34 +140,10 @@ body {
 
 /***************************************************FOOTER******************************************************************/
 
-* {
-  text-align: center;
-  list-style-type: none;
-}
-p {
-  font-family: Arial, Helvetica, sans-serif;
-}
-h1 {
-  text-align: center;
-}
-p {
-  text-align: center;
-}
-img {
-  width: 505px;
-  text-align: center;
-}
-iframe {
-  width: 405px;
-  height: 300px;
-  text-align: center;
-  margin: 20px;
-}
-
 footer {
+  margin-top: 1000px;
   background-color: #333;
   color: #fff;
-  padding: 20px;
   text-align: center;
 }
 
