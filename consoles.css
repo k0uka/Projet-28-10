@@ -9,3 +9,14 @@ div {
     align-items: center;
     flex-wrap: wrap;
 }
+
+div img {
+    width: 400px;;
+    height: 300px;;
+    border: 2px solid white;
+    border-radius: 13px;
+    box-shadow: 4px 7px 0px blue;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+}
