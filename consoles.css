@@ -2,3 +2,10 @@
     color:white;
     background-color: #222222;
 }
+
+div .class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
