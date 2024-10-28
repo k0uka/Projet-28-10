@@ -20,3 +20,8 @@ div img {
     margin: 20px;
     transition: 400ms;
 }
+
+div img:hover {
+    filter: grayscale(1);
+    transform: scale(1.3);
+}
