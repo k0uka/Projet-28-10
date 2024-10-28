@@ -6,22 +6,19 @@
 
 body {
   font-family: "Press Start 2P", cursive; /* Police rétro */
-  background-color: #222;
+  background-color: #07195a;
   color: #fff;
 }
 
 .menu {
-  background-color: #cc0000;
+  background-color: #ea4d4dd1;
   display: flex;
-  align-items: center;
+  justify-content: center;
   padding: 15px;
-  position: relative;
-  overflow: hidden;
-}
-
-.menu .logo {
-  height: 40px; /* Ajuste la hauteur du logo */
-  margin-right: 20px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Ajoute une ombre sous le menu */
 }
 
 .menu ul {
@@ -32,6 +29,7 @@ body {
 .menu ul li {
   position: relative;
   margin: 0 15px;
+  padding-top: 40px;
 }
 
 .menu ul li a {
@@ -39,29 +37,66 @@ body {
   color: #fff;
   font-size: 14px;
   padding: 8px 15px;
+  padding-left: 35px; /* Espace pour la flèche */
   display: block;
+  position: relative;
   transition: color 0.3s;
 }
 
+.menu ul li a::before {
+  content: "➤"; /* Triangle ou flèche */
+  position: absolute;
+  left: 10px; /* Ajuste pour positionner la flèche */
+  top: 50%; /* Aligne verticalement la flèche au centre du texte */
+  transform: translateY(-50%); /* Centre la flèche verticalement */
+  opacity: 0; /* Invisible par défaut */
+  transition: opacity 0.3s; /* Pour une transition douce */
+}
+
+.menu ul li:hover > a::before {
+  opacity: 1; /* Montre la flèche au survol */
+}
+
 .menu ul li a:hover {
-  color: #ffcc00;
-  background-color: #222;
+  color: #d6e10a;
+  background-color: #101d39;
   border-radius: 5px;
 }
 
-/* Style pour le sous-menu */
+.menu ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff; /* Couleur LED blanche */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu ul li a:hover::after {
+  transform: scaleX(1); /* La ligne s'étend sous le texte */
+}
+
+.submenu {
+  position: relative; /* Nécessaire pour le sous-menu */
+}
+
 .submenu ul {
   position: absolute;
   top: 100%;
   left: 0;
   display: none;
-  background-color: #222;
+  background-color: #ea4d4d66;
   padding: 10px;
   border-radius: 5px;
+  z-index: 999; /* Assure que le sous-menu est au-dessus des autres éléments */
 }
 
 .submenu:hover ul {
-  display: block;
+  display: block; /* Affiche le sous-menu au survol */
 }
 
 .submenu ul li {
@@ -69,28 +104,34 @@ body {
 }
 
 .submenu ul li a {
-  padding: 5px 10px;
-  color: #ffcc00;
+  padding: 10px 20px; /* Espace pour le sous-menu */
+  position: relative; /* Nécessaire pour positionner la flèche */
+  padding-left: 30px; /* Espace pour la flèche dans le sous-menu */
+}
+
+.submenu ul li a::before {
+  content: "➤"; /* Triangle ou flèche */
+  position: absolute;
+  left: 10px; /* Positionne la flèche à gauche du texte */
+  top: 50%; /* Aligne verticalement la flèche au centre du texte */
+  transform: translateY(
+    -50%
+  ); /* Ajuste la flèche pour qu'elle soit bien centrée verticalement */
+  opacity: 0; /* Invisible par défaut */
+  transition: opacity 0.3s; /* Pour une transition douce */
+}
+
+.submenu ul li:hover > a::before {
+  opacity: 1; /* Montre la flèche au survol */
 }
 
 .submenu ul li a:hover {
-  background-color: #cc0000;
-  color: #fff;
+  color: #d6e10a;
+  background-color: #101d39;
   border-radius: 3px;
 }
 
-/* Ligne LED blanche animée */
-.menu::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: -100%; /* Ligne commence en dehors de l'écran */
-  width: 100%;
-  height: 3px;
-  background: #fff;
-  transition: transform 0.5s ease-in-out;
-}
-
-.menu:hover::before {
-  transform: translateX(100%); /* La ligne traverse toute la barre */
+.menu .logo {
+  height: 100px; /* Ajuste la hauteur selon tes besoins */
+  margin-right: auto;
 }
