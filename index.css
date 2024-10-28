@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", cursive; /* Police rétro */
+  background-color: #222;
+  color: #fff;
+}
+
+.menu {
+  background-color: #cc0000;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu .logo {
+  height: 40px; /* Ajuste la hauteur du logo */
+  margin-right: 20px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  position: relative;
+  margin: 0 15px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 15px;
+  display: block;
+  transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #ffcc00;
+  background-color: #222;
+  border-radius: 5px;
+}
+
+/* Style pour le sous-menu */
+.submenu ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.submenu:hover ul {
+  display: block;
+}
+
+.submenu ul li {
+  margin: 5px 0;
+}
+
+.submenu ul li a {
+  padding: 5px 10px;
+  color: #ffcc00;
+}
+
+.submenu ul li a:hover {
+  background-color: #cc0000;
+  color: #fff;
+  border-radius: 3px;
+}
+
+/* Ligne LED blanche animée */
+.menu::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -100%; /* Ligne commence en dehors de l'écran */
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  transition: transform 0.5s ease-in-out;
+}
+
+.menu:hover::before {
+  transform: translateX(100%); /* La ligne traverse toute la barre */
+}
