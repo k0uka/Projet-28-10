@@ -143,7 +143,6 @@
 
 p{
 font-family: "Roboto", sans-serif;
-
 }
 
 
@@ -240,14 +239,78 @@ a:hover {
 }
 
 .parallax1 {
-    background-image: url(photos/pdlb/retro.jpg); /* Remplace par l'URL de ton image */
+    background-image: url(photos/pdlb/ivan-rudoy-cJjkxNyCnPE-unsplash.jpg); /* Remplace par l'URL de ton image */
 }
 
 
-.hdlb{
+/* .hdlb{
 padding-left: 200px ;
 padding-right: 200px;
 margin-bottom: 50px;
 margin-top: 50px;
 text-align: left;
+} */
+
+
+.hdlb {
+  background-color: #5e34aec5;
+  border: 4px solid #1899d5;
+  padding: 20px;
+  border-radius: 15px;
+  font-family: 'Press Start 2P', cursive;
+  color: #f9f9f9;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.hdlb h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #7f95c8;
+  text-shadow: 2px 2px #ffccbc;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+.hdlb p {
+  line-height: 1.5;
+  font-size: 1.1em;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+.hdlb p span {
+  color: #ff4081;
+}
+
+.hdlb p span.italic {
+  font-style: italic;
+}
+
+.hdlb p span.bold {
+  font-weight: bold;
+}
+
+.hdlb p span.underline {
+  text-decoration: underline;
 }
