@@ -1,5 +1,4 @@
 body {
-  font-family: Arial, sans-serif;
   background-color: #f4f4f4;
 }
 
@@ -8,7 +7,9 @@ body {
   font-family: "Press Start 2P", cursive; /* Police rétro */
   display: flex;
   justify-content: center;
-  padding: 15px;
+  /* padding: 15px; */
+  margin-top: -22px;
+  margin-left: -10px;
   position: fixed;
   z-index: 1000;
   width: 100%;
@@ -142,9 +143,12 @@ body {
 .contact15 {
   text-align: center;
 }
+
 h1 {
+  padding-top: 200px;
   text-align: center;
   color: #333;
+  font-family: "Press Start 2P", cursive; /* Police rétro */
 }
 
 .question a {
@@ -195,6 +199,8 @@ footer {
   padding: 20px;
   margin-top: auto;
   list-style-type: none;
+  margin-top: 200px;
+  width: 100%;
 }
 
 .footer-container {
