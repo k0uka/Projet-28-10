@@ -4,100 +4,334 @@
     <link rel="stylesheet" href="faq.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <title>FAQ</title>
   </head>
   <body>
-    <body>
-      <header>
-        <h1>Questions fréquentes</h1>
+    <nav class="menu">
+      <img src="photos/index/logo.png" alt="Logo Nintendo" class="logo" />
+      <!-- Ajout du logo ici -->
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="pdlb.html">Présentation de la Boutique</a></li>
+        <li class="submenu">
+          <a href="#consoles">Consoles</a>
+          <ul>
+            <li><a href="#nes">NES</a></li>
+            <li><a href="#snes">SuperNES</a></li>
+            <li><a href="#n64">N64</a></li>
+            <li><a href="#gamecube">GameCube</a></li>
+            <li><a href="#gameboy">GameBoy</a></li>
+          </ul>
+        </li>
+        <li><a href="#jeux">Jeux</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Questions fréquentes</h1>
     </header>
     <main>
       <div class="container">
-        <section  class="faq">
-            <h2 class="question">1. Qui sommes-nous ?</h2>
-            <p class="reponse">Nous sommes une entreprise dédiée à fournir des solutions innovantes.</p>
+        <section class="faq">
+          <h2 class="question"><a href="#q1">1. Qui sommes-nous ?</a></h2>
+          <p class="reponse" id="q1">
+            Nous sommes une entreprise dédiée à fournir des solutions
+            innovantes.
+          </p>
         </section>
 
         <section class="faq">
-            <h2 class="question">2. Qu'est-ce que nous offrons ?</h2>
-            <p class="reponse">Nous proposons une variété de services, y compris le développement web, le design graphique et le marketing digital.</p>
+          <h2 class="question">
+            <a href="#q2">2. Qu'est-ce que nous offrons ?</a>
+          </h2>
+          <p class="reponse" id="q2">
+            Nous proposons une variété de services, y compris le développement
+            web, le design graphique et le marketing digital.
+          </p>
         </section>
 
         <section class="faq">
-            <h2 class="question">3. Où sommes-nous situés ?</h2>
-            <p class="reponse">Nous sommes basés à Paris, mais nous travaillons avec des clients du monde entier.</p>
+          <h2 class="question"><a href="#q3">3. Où sommes-nous situés ?</a></h2>
+          <p class="reponse" id="q3">
+            Nous sommes basés à Paris, mais nous travaillons avec des clients du
+            monde entier.
+          </p>
         </section>
 
         <section class="faq">
-            <h2 class="question">4. Quand pouvons-nous vous aider ?</h2>
-            <p class="reponse">Nous sommes disponibles 24/7 pour répondre à vos besoins.</p>
+          <h2 class="question">
+            <a href="#q4">4. Quand pouvons-nous vous aider ?</a>
+          </h2>
+          <p class="reponse" id="q4">
+            Nous sommes disponibles 24/7 pour répondre à vos besoins.
+          </p>
         </section>
 
         <section class="faq">
-          <h2 class="question">5. Comment puis-je m'inscrire ?</h2>
-          <p class="reponse">Vous pouvez vous inscrire en ...</p>
+          <h2 class="question">
+            <a href="#q5">5. Comment puis-je m'inscrire ?</a>
+          </h2>
+          <p class="reponse" id="q5">Vous pouvez vous inscrire en ...</p>
         </section>
 
         <section class="faq">
-            <h2 class="question">6. Comment nous contacter ?</h2>
-            <p class="reponse">Vous pouvez nous contacter par email à contact@notreentreprise.com.</p>
+          <h2 class="question">
+            <a href="#q6">6. Comment nous contacter ?</a>
+          </h2>
+          <p class="reponse" id="q6">
+            Vous pouvez nous contacter par email à contact@notreentreprise.com.
+          </p>
         </section>
 
         <section class="faq">
-            <h2 class="question">7. Pourquoi choisir nos services ?</h2>
-            <p class="reponse">Nous offrons des solutions sur mesure et un service client exceptionnel.</p>
+          <h2 class="question">
+            <a href="#q7">7. Pourquoi choisir nos services ?</a>
+          </h2>
+          <p class="reponse" id="q7">
+            Nous offrons des solutions sur mesure et un service client
+            exceptionnel.
+          </p>
         </section>
 
         <section class="faq">
-          <h2 class="question">8. Quels sont vos horaires d'ouverture ?</h2>
-          <p class="reponse">Les horaires d'ouverture sont de 9:30 à 19:30 du lundi ou vendredi
+          <h2 class="question">
+            <a href="#q8">8. Quels sont vos horaires d'ouverture ?</a>
+          </h2>
+          <p class="reponse" id="q8">
+            Les horaires d'ouverture sont de 9:30 à 19:30 du lundi ou vendredi
             et de 10:00 à 18:00 le samedi.
           </p>
         </section>
 
         <section class="faq">
-          <h2 class="question">9. Faites-vous des réparations de consoles ?</h2>
-          <p class="reponse">Non ...</p>
+          <h2 class="question">
+            <a href="#q9">9. Faites-vous des réparations de consoles ?</a>
+          </h2>
+          <p class="reponse" id="q9">Non ...</p>
         </section>
 
         <section class="faq">
-          <h2 class="question">10. Quels sont les frais  ?</h2>
-          <p class="reponse"> Les frais sont ...</p>
+          <h2 class="question">
+            <a href="#q10">10. Quels sont les frais ?</a>
+          </h2>
+          <p class="reponse" id="q10">Les frais sont ...</p>
         </section>
 
         <section class="faq">
-          <h2 class="question">11. Quels moyens de paiement acceptez-vous ?</h2>
-          <p class="reponse">Les différents moyens de paiement sont ...</p>
+          <h2 class="question">
+            <a href="#q11">11. Quels moyens de paiement acceptez-vous ?</a>
+          </h2>
+          <p class="reponse" id="q11">
+            Les différents moyens de paiement sont ...
+          </p>
         </section>
 
         <section class="faq">
-          <h2 class="question">12. Quelle est votre politique de retour ?</h2>
-          <p class="reponse">Vous pouvez retourner tout article dans les 30 jours suivant l'achat pour un remboursement complet.</p>
+          <h2 class="question">
+            <a href="#q12">12. Quelle est votre politique de retour ?</a>
+          </h2>
+          <p class="reponse" id="q12">
+            Vous pouvez retourner tout article dans les 30 jours suivant l'achat
+            pour un remboursement complet.
+          </p>
         </section>
 
         <section class="faq">
-          <h2 class="question">13. Combien de temps prend la livraison ?</h2>
-          <p class="reponse">La livraison prend généralement entre 5 et 7 jours ouvrables, selon votre localisation.</p>
+          <h2 class="question">
+            <a href="#q13">13. Combien de temps prend la livraison ?</a>
+          </h2>
+          <p class="reponse" id="q13">
+            La livraison prend généralement entre 5 et 7 jours ouvrables, selon
+            votre localisation.
+          </p>
         </section>
 
         <section class="faq">
-          <h2 class="question">14.Offrez-vous une expédition internationale ?</h2>
-          <p class="reponse">Non, nous expédions pas à l'internationale.</p>
+          <h2 class="question">
+            <a href="#q14">14. Offrez-vous une expédition internationale ?</a>
+          </h2>
+          <p class="reponse" id="q14">
+            Non, nous expédions pas à l'internationale.
+          </p>
         </section>
 
         <section class="faq">
-          <h2 class="question">15. Comment puis-je contacter le service client ?</h2>
-          <p class="reponse">Vous pouvez nous contacter par email à backtopixel@entreprise.com ou par téléphone au +33 1 23 45 67 89.</p>
+          <h2 class="question">
+            <a href="#q15">15. Comment puis-je contacter le service client ?</a>
+          </h2>
+          <p class="reponse" id="q15">
+            Vous pouvez nous contacter par email à backtopixel@entreprise.com ou
+            par téléphone au +33 1 23 45 67 89.
+          </p>
         </section>
 
         <section class="faq">
-          <h2 class="question">16. Où puis-je trouver plus d'informations ?</h2>
-          <p class="reponse">Vous pouvez trouver plus d'informations sur nos réseaux sociaux.</p>
+          <h2 class="question">
+            <a href="#q16">16. Où puis-je trouver plus d'informations ?</a>
+          </h2>
+          <p class="reponse" id="q16">
+            Vous pouvez trouver plus d'informations sur nos réseaux sociaux.
+          </p>
+        </section>
+      </div>
+      <div class="container">
+        <section class="faq">
+          <details>
+            <summary class="question">
+              Quelle est notre politique de retour ?
+            </summary>
+            <p class="reponse">
+              Nous voulons que vous soyez entièrement satisfait de votre achat.
+              Si pour une raison quelconque vous n'êtes pas satisfait, vous
+              pouvez retourner vos articles dans les 30 jours suivant la date
+              d'achat. Voici les étapes à suivre :
+            </p>
+            <ol>
+              <li>
+                <strong>Conditions de retour :</strong> Les articles doivent
+                être non utilisés, dans leur état d'origine et dans leur
+                emballage d'origine.
+              </li>
+              <li>
+                <strong>Processus de retour :</strong>
+                <ul>
+                  <li>
+                    Contactez notre service client à l'adresse email :
+                    <a href="serviceclient@backtopixel.com"
+                      >serviceclient@backtopixel.com</a
+                    >
+                    pour obtenir un numéro de retour.
+                  </li>
+                  <li>
+                    Joignez une copie de votre reçu ou de votre preuve d'achat.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Expédition :</strong> Les frais d'expédition pour le
+                retour des articles sont à votre charge, sauf si le retour est
+                dû à une erreur de notre part (article défectueux ou incorrect).
+              </li>
+              <li>
+                <strong>Remboursement :</strong> Une fois que nous avons reçu et
+                inspecté votre retour, nous traiterons votre remboursement dans
+                un délai de 7 à 10 jours ouvrables. Le remboursement sera
+                effectué sur le même mode de paiement que celui utilisé lors de
+                l'achat.
+              </li>
+              <li>
+                <strong>Articles non remboursables :</strong> Certaines
+                exceptions s'appliquent aux articles suivants :
+                <ul>
+                  <li>Cartes-cadeaux</li>
+                  <li>Articles en promotion ou soldés</li>
+                  <li>Articles personnalisés</li>
+                </ul>
+              </li>
+            </ol>
+            <p>
+              Si vous avez des questions supplémentaires concernant notre
+              politique de retour, n'hésitez pas à nous contacter.
+            </p>
+          </details>
+        </section>
+      </div>
+      <div class="container">
+      <section class="faq">
+      <details>
+      <summary class="question">
+        Nos Services
+        </summary>
+          <p class="reponse">
+            Découvrez nos services dédiés au développement et à la promotion de
+            jeux vidéo.
+          </p>
+          <section class="question">
+          <h2>Développement de Jeux</h2>
+          <p class="reponse">
+            Nous concevons des jeux vidéo sur mesure pour PC, consoles et
+            mobiles, en intégrant les dernières technologies.
+          </p>
+        </section>
+
+        <section class="question">
+          <h2>Tests et Assurance Qualité</h2>
+          <p class="reponse">
+            Notre équipe effectue des tests approfondis pour garantir la
+            performance et la qualité de votre jeu avant sa sortie.
+          </p>
+        </section>
+
+        <section class="question">
+          <h2>Design Graphique</h2>
+          <p class="reponse">
+            Création de visuels attrayants et immersifs pour renforcer
+            l'expérience utilisateur et l'identité de votre jeu.
+          </p>
+        </section>
+
+        <section class="question">
+          <h2>Marketing Digital</h2>
+          <p class="reponse">
+            Stratégies de marketing ciblées pour promouvoir votre jeu et
+            atteindre votre public cible sur diverses plateformes.
+          </p>
+        </section>
+
+        <section class="question">
+          <h2>Support Client</h2>
+          <p class="reponse">
+            Assistance dédiée pour résoudre les problèmes de vos utilisateurs et
+            améliorer leur expérience de jeu.
+          </p>
+        </section>
+         </div>
+        </details>
         </section>
       </div>
     </main>
-    <footer>
-        <p>&copy; 2024 Notre Entreprise. Tous droits réservés.</p>
-    </footer>
+    
   </body>
-  </html>
+  <footer>
+    <div class="footer-container">
+      <div class="contact15">
+        <h3>Contactez-nous :</h3>
+        <p>Email : backtopixel@entreprise.com</p>
+        <p>Téléphone : +33 1 23 45 67 89</p>
+      </div>
+      <div class="social-media">
+        <!-- <h3>Suivez-nous</h3> -->
+        <div class="icons">
+          <a href="https://www.nintendo.com/fr-fr/" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.nintendo.com/fr-fr/" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.nintendo.com/fr-fr/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.nintendo.com/fr-fr/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="mentions">
+        <p>&copy; 2024 Back To Pixel. Tous droits réservés.</p>
+        <p>
+          <a href="">Mentions légales </a> |
+          <a href="">Politique de confidentialité</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</html>
