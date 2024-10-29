@@ -20,6 +20,7 @@ div img {
     cursor: pointer;
     margin: 20px;
     transition: 400ms;
+    background-color: #101d39;   
 }
 
 div img:hover {
