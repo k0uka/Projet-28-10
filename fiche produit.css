@@ -1,15 +1,15 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #07195a;
-    color: #fff;
-  }
-  
-  html,
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #07195a;
+  color: #fff;
+}
+
+html,
 body {
   height: 100%;
   display: flex;
@@ -32,6 +32,8 @@ body {
 .menu ul {
   list-style: none;
   display: flex;
+  white-space: nowrap;
+  padding-right: 15px;
 }
 
 .menu ul li {
@@ -97,7 +99,7 @@ body {
   top: 100%;
   left: 0;
   display: none;
-  background-color: #ea4d4d66;
+  background-color: #ea4d4dcf;
   padding: 10px;
   border-radius: 5px;
   z-index: 999; /* Assure que le sous-menu est au-dessus des autres éléments */
@@ -141,91 +143,86 @@ body {
 
 .menu .logo {
   height: 100px; /* Ajuste la hauteur selon tes besoins */
-  width: 200px;
-  margin-right: auto;
+  margin-left: -310px;
 }
 
-  img{
-    height: 500px;
-    width: 1300px;
-    padding-left: 200px;
-    object-fit: contain;
-    
-    
-  }
-
-  h1{
-    text-align: center;
-    font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    margin-top: 10px;
-  }
-
-h2{
-    font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    margin-top: 10px;
+img {
+  height: 500px;
+  width: 1300px;
+  padding-left: 200px;
+  object-fit: contain;
 }
 
-  .Syp{
-    display: inline-block;
-    margin-top: 100px;
-    
-  }
+h1 {
+  text-align: center;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 10px;
+}
 
-  section > img{
-    width: 600px;
-    height: 400px;
-    margin-top: 20px;
-  }
+h2 {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 10px;
+}
 
-  section>p{
-    margin-left: 400px;
-  }
+.Syp {
+  display: inline-block;
+  margin-top: 100px;
+}
 
-  p{
-    font-family: "Roboto", sans-serif;
+section > img {
+  width: 600px;
+  height: 400px;
+  margin-top: 20px;
+}
+
+section > p {
+  margin-left: 400px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-style: normal;
-  }
+}
 
-  .edit> h2,p{
-    display: inline-block;
-    margin-top: 10px;
-    
-   
-  }
-  .edit{
-   border: 4px solid #f1f1f1;
-   text-align: center;
-   margin-top: 50px;
-   margin-bottom: 15px;
-   width: 1000px;
-   margin-left: 250px;
-   background-color: white;
-   color: #07195a;
-  }
+.edit > h2,
+p {
+  display: inline-block;
+  margin-top: 10px;
+}
+.edit {
+  border: 4px solid #f1f1f1;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  width: 1000px;
+  margin-left: 250px;
+  background-color: white;
+  color: #07195a;
+}
 
-  .Pri{
-    margin-left: 40px;
-  }
+.Pri {
+  margin-left: 40px;
+}
 
-  .Duck{
-    color: red;
-    font-size: 34px;
-    font: 400;
-  }
+.Duck {
+  color: red;
+  font-size: 34px;
+  font: 400;
+}
 
-  .Consol{
-    text-decoration-line: underline;
-    padding-bottom: 10px;
-    color: rgb(0, 149, 255);
-    margin-bottom: 50px;
-  }
+.Consol {
+  text-decoration-line: underline;
+  padding-bottom: 10px;
+  color: rgb(0, 149, 255);
+  margin-bottom: 50px;
+}
 
- /***************************************************FOOTER******************************************************************/
+/***************************************************FOOTER******************************************************************/
 
 footer {
   background-color: #333;
@@ -290,7 +287,3 @@ a:hover {
 }
 
 /**************************************FIN FOOTERR ********************************************/
-
-  
-  
-
