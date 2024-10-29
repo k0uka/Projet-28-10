@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
   background-color: #f4f4f4;
 }
 
@@ -129,21 +130,31 @@ body {
 .menu .logo {
   height: 100px; /* Ajuste la hauteur selon tes besoins */
   margin-right: auto;
+=======
+  font-family: roboto;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+>>>>>>> cd2abe2adc3cfbdf9d8676ce094c50b1c76c2e8d
 }
 
 .container {
-  max-width: 600px;
-  margin: auto;
-  background: white;
+  max-width: 800px;
+  margin: 20px auto;
   padding: 20px;
-  border-radius: 5px;
+  background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
+<<<<<<< HEAD
 .contact15 {
   text-align: center;
 }
 
+=======
+>>>>>>> cd2abe2adc3cfbdf9d8676ce094c50b1c76c2e8d
 h1 {
   padding-top: 200px;
   text-align: center;
@@ -151,28 +162,24 @@ h1 {
   font-family: "Press Start 2P", cursive; /* Police rétro */
 }
 
-.question a {
-  color: black;
-}
 .faq {
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 10px; /* Ajoute de l'espace entre les sections */
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
 }
 
-h2 {
+.question {
   cursor: pointer;
-  padding: 15px;
-  background: #f9f9f9;
-  font-size: 18px;
-  outline: none;
-  transition: background 0.3s ease; /* Transition douce pour le fond */
+  color: #040405;
+  margin: 0;
 }
 
-h2:hover,
-summary:hover {
-  background: #e0e0e0; /* Change le fond au survol */
+.reponse {
+  display: none; /* Cacher les réponses par défaut */
+  padding: 10px 0;
 }
 
+<<<<<<< HEAD
 details[open] h2,
 summary {
   background: #d0d0d0; /* Change le fond quand ouvert */
@@ -219,43 +226,13 @@ h3 {
 }
 
 .mentions a:hover {
+=======
+.question:hover {
+>>>>>>> cd2abe2adc3cfbdf9d8676ce094c50b1c76c2e8d
   text-decoration: underline;
 }
 
-.mentions {
-  position: relative;
-  text-align: center;
+/* Afficher la réponse lorsque l'élément a la classe 'active' */
+.faq .reponse.active {
+  display: block;
 }
-
-.mentions a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.contact {
-  text-align: left;
-}
-
-.social-media {
-  text-align: center;
-}
-.social-media .icons {
-  display: flex;
-  gap: 15px; /* Espace entre les icônes */
-  justify-content: center; /* Centre les icônes horizontalement */
-}
-
-.social-media .icons a {
-  color: #ffffff;
-  font-size: 24px; /* Ajuste la taille des icônes */
-  transition: color 0.3s;
-  text-decoration: none;
-}
-
-.social-media .icons a:hover {
-  color: #dd4a48; /* Couleur de survol */
-}
-/* ol,
-ul {
-  padding-left: 20px; /* Ajout d'un espacement pour les listes */
-/* } */

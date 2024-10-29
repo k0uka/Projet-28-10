@@ -14,16 +14,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
 
-    <link rel="icon" href="photos/index/logo.png" type="image/x-icon" />
+    <link rel="icon" href="photos/index/file.png" type="image/x-icon" />
   </head>
   <body>
     <nav class="menu">
       <img src="photos/index/logo.png" alt="Logo Nintendo" class="logo" />
       <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#presentation">Présentation de la Boutique</a></li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="pdlb.html">Présentation de la Boutique</a></li>
         <li class="submenu">
-          <a href="#consoles">Consoles</a>
+          <a href="consoles.html">Consoles</a>
           <ul>
             <li><a href="#nes">NES</a></li>
             <li><a href="#snes">SuperNES</a></li>
@@ -32,8 +32,8 @@
             <li><a href="#gameboy">GameBoy</a></li>
           </ul>
         </li>
-        <li><a href="#jeux">Jeux</a></li>
-        <li><a href="#faq">FAQ</a></li>
+        <li><a href="Jeux.html">Jeux</a></li>
+        <li><a href="faq.html">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -46,13 +46,13 @@
       <p>
         Bienvenue dans notre boutique dédiée aux passionnés de l'univers Nintendo et aux amateurs de retrogaming ! Située au cœur de la ville, notre boutique est un véritable sanctuaire pour les nostalgiques des premières consoles et des jeux vidéo iconiques. Dès l’entrée, vous serez plongé dans une atmosphère unique, entre écrans cathodiques diffusant des parties de jeux rétro et murs décorés d’affiches vintage célébrant les personnages emblématiques de Nintendo. Chez nous, vous trouverez toutes les générations de consoles, des premières NES et Game Boy jusqu’aux plus récentes, ainsi que des jeux rares qui ont marqué l’histoire du gaming.
       </p>
-      <button class="read-more">Lire la suite</button>
+      <a href="pdlb.html"><button class="read-more">Lire la suite</button></a>
     </div>
   </div>
-</section>
 
-      <!-- Mise en avant des catégories -->
-      <section class="categories">
+
+   <!-- Mise en avant des catégories -->
+   <section class="categories">
         <h2>Catégories</h2> <br> <br>
         <div class="card-container">
             <div class="card console">
@@ -72,9 +72,9 @@
           </div>
         </div>
     </section>
-<br><br><br>
+<div class="parallax"> </div>
       <!-- Produits populaires -->
-      <section class="produits-populaires">
+   <section class="produits-populaires">
         <h2>Produits Populaires</h2> <br> <br>
         <div class="podium">
             <div class="card1 produit">
@@ -97,83 +97,104 @@
     </section>
     
     
-    <div class="parallax"></div>
-
-      <!-- Actualités -->
-      <section class="news">
-        <h2>Actualités</h2>
-        <div class="fb-posts">
-          <!-- Intégration des publications Facebook -->
-        </div>
-      </section>
-      <div class="parallax"></div>
+    <div class="parallaxactu"></div>
+    <section class="actualites">
+      <h2>Actualité</h2>
+      <div class="image-links">
+        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FNintendoFR%2Fvideos%2F1422938818404872%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FNintendoFR%2Fvideos%2F1201309124379368%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>       </div>    
+      <div class="scroll-container">
+          <div class="scroll-content">
+              <div class="actu-card">🎮 Nouvelle console rétro disponible !</div>
+              <div class="actu-card">🌟 Le prochain Zelda annoncé pour 2025 !</div>
+              <div class="actu-card">🔥 Promotions sur les jeux Mario ce mois-ci !</div>
+              <div class="actu-card">🕹️ Participez à notre concours et gagnez des jeux !</div>
+              <div class="actu-card">💥 Découvrez notre sélection de jeux classiques !</div>
+          </div>
+      </div>
+  </section>
+  
+      <div class="parallaxcont"></div>
 
       <!-- Formulaire de contact -->
-      <section class="contact-form">
-        <h2>Contactez-nous</h2>
-        <section class="contact">
-    <h2>Contactez-nous</h2>
-    <div class="contact-container">
-        <!-- Formulaire de contact -->
-        <div class="contact-form">
-            <form action="votre_script.php" method="post">
-                <label for="prenom">Prénom *</label>
-                <input type="text" id="prenom" name="prenom" required>
-
-                <label for="nom">Nom *</label>
-                <input type="text" id="nom" name="nom" required>
-
-                <label for="email">Email *</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message *</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <label for="age">Âge</label>
-                <input type="number" id="age" name="age">
-
-                <label for="console">Console préférée</label>
-                <input type="text" id="console" name="console">
-
-                <label for="telephone">Téléphone</label>
-                <input type="tel" id="telephone" name="telephone">
-
-                <button type="submit" class="submit-button">Envoyer</button>
-            </form>
-        </div>
-
-        <!-- Informations de contact et carte -->
-        <div class="contact-info">
-            <h3>Nos coordonnées</h3>
-            <p>Adresse : 123 Rue des Jeux, 75000 Paris</p>
-            <p>Email : contact@retrogamingstore.fr</p>
-            <p>Téléphone : 01 23 45 67 89</p>
-            <h3>Horaires d'ouverture</h3>
-            <p>Lundi - Vendredi : 10h - 19h</p>
-            <p>Samedi : 10h - 18h</p>
-
-            <!-- Carte Google Maps -->
-            <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.2929379063876!2d1.1008968759975615!3d49.44118015951832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0de80037b0b31%3A0xc44b86a6389ced60!2s10%20Rue%20du%20G%C3%A9n%C3%A9ral%20Sarrail%2C%2076000%20Rouen!5e0!3m2!1sfr!2sfr!4v1730146013258!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+      <section class="contact" >
+        <div class="contact-block" >
+            <h2 id="contact">Contactez-Nous</h2>
+            
+            <div class="contact-content">
+                <!-- Bloc du formulaire de contact -->
+                <div class="contact-form">
+                    <h3>Envoyez-nous un message</h3>
+                    <form action="votre_script.php" method="post">
+                        <label for="prenom">Prénom *</label>
+                        <input type="text" id="prenom" name="prenom" required>
+    
+                        <label for="nom">Nom *</label>
+                        <input type="text" id="nom" name="nom" required>
+    
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+    
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+    
+                        <!-- Champs facultatifs -->
+                        <label for="age">Âge (facultatif)</label>
+                        <input type="number" id="age" name="age" min="0" max="120">
+    
+                        <label for="console">Console préférée (facultatif)</label>
+                        <input type="text" id="console" name="console" placeholder="e.g., Nintendo, PlayStation">
+    
+                        <label for="telephone">Téléphone (facultatif)</label>
+                        <input type="tel" id="telephone" name="telephone" placeholder="+33 ...">
+    
+                        <button type="submit" class="submit-button">Envoyer</button>
+                    </form>
+                </div>
+    
+                <!-- Bloc des informations de contact -->
+                <div class="contact-info">
+                    <h3>Nos Coordonnées</h3>
+                    <p><strong>Adresse :</strong>  10 Rue du Général Sarrail, 76000 Rouen</p>
+                    <p><strong>Email :</strong> backtopixel@entreprise.com</p>
+                    <p><strong>Téléphone :</strong> +33 1 23 45 67 89</p>
+            <br> <br> <br>
+                    <h3>Horaires d'ouverture</h3>
+                    <p><ul>
+                      <li><b>Lundi</b> : 09:30 - 19:30</li>
+                      <li><b>Mardi</b> : 09:30 - 19:30</li>
+                      <li><b>Mercredi</b> : 09:30 - 19:30</li>
+                      <li><b>Jeudi</b> : 09:30 - 19:30</li>
+                      <li><b>Vendredi</b> : 09:30 - 19:30</li>
+                      <li><b>Samedi</b> : 10:00 - 18:00</li>
+                      <li><b>Dimanche</b> : Fermée</li>
+                    </ul></p>
+    <br> <br> <br> <br>
+                    <!-- Carte Google Maps -->
+                    <div class="map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.2929379063876!2d1.1008968759975615!3d49.44118015951832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0de80037b0b31%3A0xc44b86a6389ced60!2s10%20Rue%20du%20G%C3%A9n%C3%A9ral%20Sarrail%2C%2076000%20Rouen!5e0!3m2!1sfr!2sfr!4v1730146013258!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+       
 
-<div class="parallax"></div>
+<div class="parallaxfo"></div>
     </main>
     <br />
     <br />
 
     <footer>
       <div class="footer-container">
-        <div class="contact">
-          <h3>Contactez-nous</h3>
+        <div class="contact27">
+          <h3>Contactez-nous :</h3>
           <p>Email : backtopixel@entreprise.com</p>
           <p>Téléphone : +33 1 23 45 67 89</p>
         </div>
         <div class="social-media">
-          <h3>Suivez-nous</h3>
+          <!-- <h3>Suivez-nous</h3> -->
           <div class="icons">
             <a href="https://www.nintendo.com/fr-fr/" target="_blank">
               <i class="fab fa-facebook"></i>

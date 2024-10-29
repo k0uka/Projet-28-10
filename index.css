@@ -6,10 +6,10 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   background-color: #07195a;
   color: #fff;
-}
+} */
 
 html,
 body {
@@ -151,79 +151,17 @@ main {
   flex: 1;
   background-color: #07195a;
   color: #fff;
+  margin-bottom: 0px;
+  margin-top: 25px;
+  padding-bottom: 0%;
 }
-
-/***************************************************FOOTER******************************************************************/
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  margin-top: auto;
-  list-style-type: none;
-}
-
-.footer-container {
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.mentions,
-.contact,
-.social-media {
-  margin: 10px;
-}
-
-h3 {
-  margin-bottom: 10px;
-}
-
-a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.mentions {
-  position: relative;
-  text-align: center;
-}
-
-.contact {
-  text-align: left;
-}
-
-.social-media {
-  text-align: center;
-}
-.social-media .icons {
-  display: flex;
-  gap: 15px; /* Espace entre les icônes */
-  justify-content: center; /* Centre les icônes horizontalement */
-}
-
-.social-media .icons a {
-  color: #ffffff;
-  font-size: 24px; /* Ajuste la taille des icônes */
-  transition: color 0.3s;
-  text-decoration: none;
-}
-
-.social-media .icons a:hover {
-  color: #dd4a48; /* Couleur de survol */
-}
-
-/**************************************FIN FOOTERR ********************************************/
 
 .slogan {
   position: relative;
   font-size: 2.5em;
   font-family: "Press Start 2P", cursive;
   z-index: 1;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 /* Présentation */
@@ -242,7 +180,7 @@ a:hover {
   font-family: Arial, sans-serif;
   max-width: 600px;
   text-align: center;
-  margin-top: 50px; /* Espace entre le slogan et la box */
+  margin-top: 150px; /* Espace entre le slogan et la box */
   z-index: 1;
 }
 
@@ -305,6 +243,7 @@ a:hover {
 .categories {
   text-align: center;
   margin: 50px 0;
+  font-family: "Press Start 2P", cursive;
 }
 
 .card-container {
@@ -363,7 +302,16 @@ a:hover {
 /* Produits populaires */
 .produits-populaires {
   text-align: center;
-  margin: 40px 0;
+  margin-top: -200px;
+  text-align: center;
+  color: white;
+}
+
+.produits-populaires h2 {
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Press Start 2P", cursive;
 }
 
 .podium {
@@ -373,7 +321,7 @@ a:hover {
 }
 
 .card1 {
-  background-color: #f0e68c; /* Couleur de fond rétro */
+  background-color: #da5e5e; /* Couleur de fond rétro */
   border: 2px solid #e3b04b; /* Bordure dorée */
   border-radius: 10px;
   padding: 20px;
@@ -428,83 +376,330 @@ a:hover {
   color: #fff;
   text-align: center;
   margin-bottom: 200px;
-  padding-top: 200px;
+  padding-top: 20px;
+}
+
+.parallaxactu {
+  background-image: url("photos/index/fpic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 200px; /* Ajuste la hauteur pour intégrer la box */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 200px;
+  padding-top: 20px;
+}
+
+.parallaxcont {
+  background-image: url("photos/index/fpic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 200px; /* Ajuste la hauteur pour intégrer la box */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: -9px;
+}
+
+.parallaxfo {
+  background-image: url("photos/index/fpic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 200px; /* Ajuste la hauteur pour intégrer la box */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/*********************************Actualités*******************************************************************/
+
+.actualites {
+  width: 100%;
+  overflow: hidden;
+  background-color: #1e1e1e;
+  border: 3px solid #ff6b6b;
+  padding: 1px;
+  font-family: "Press Start 2P", cursive;
+  color: #ff6b6b;
+  text-align: center;
+  margin-top: -200px;
+}
+
+.actualites h2 {
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.scroll-container {
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: -50px;
+}
+
+.scroll-content {
+  display: inline-block;
+  padding-left: 100%; /* démarre le texte en dehors de la vue */
+  animation: scroll-left 25s linear infinite;
+}
+
+.actu-card {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #2b2b2b;
+  border: 2px solid #ff6b6b;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* photos actu */
+
+.image-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0%;
+}
+
+.image-link {
+  width: 100px; /* Ajuste la taille selon tes besoins */
+  height: auto;
+  margin: 0 10px;
+  border: 2px solid #ff6b6b; /* Bordure rétro */
+  border-radius: 5px;
 }
 
 /*contact*/
 
 .contact {
-  padding: 40px;
-  background-color: #03386d;
+  padding: 0px 0;
+  background-color: #b86060;
   text-align: center;
+  color: #ffffff;
+  margin-top: -500px;
 }
 
 .contact h2 {
-  font-size: 2em;
-  color: #ffffff;
+  font-size: 2.5em;
+  color: #eeecf6;
+  font-family: "Press Start 2P", cursive;
   margin-bottom: 20px;
 }
 
-.contact-container {
+.contact-block {
+  background: #222;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+  max-width: 800px;
+  margin: auto;
+}
+
+.contact-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  gap: 20px;
 }
 
 .contact-form,
 .contact-info {
-  width: 100%;
-  margin: 10px;
-  background: #ffffff;
+  flex: 1 1 45%;
+  background: #c07777;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 3px solid #c10a0a;
+}
+
+.contact-form h3,
+.contact-info h3 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.2em;
+  color: #2b2b60;
+  margin-bottom: 15px;
 }
 
 .contact-form label {
   display: block;
   font-weight: bold;
+  color: #a22727;
+  font-size: 0.9em;
   margin-top: 10px;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   margin-top: 5px;
-  border: 1px solid #000000;
+  border: none;
   border-radius: 5px;
+  font-family: inherit;
+  font-size: 0.9em;
+  background: #222;
+  color: #ffffff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #ffcc00;
 }
 
 .submit-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #333;
+  padding: 12px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 15px;
-  font-weight: bold;
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
 }
 
 .submit-button:hover {
-  background-color: #0056b3;
-}
-
-.contact-info h3 {
-  margin-top: 15px;
-  color: #007bff;
+  background-color: #242851;
+  color: white;
 }
 
 .contact-info p {
-  margin: 5px 0;
-  color: #333;
+  font-size: 0.95em;
+  color: #dddddd;
+  margin: 8px 0;
 }
 
 .map iframe {
   width: 100%;
-  height: 250px;
+  height: 200px;
   border: none;
   border-radius: 5px;
-  margin-top: 15px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(186, 16, 16, 0.4);
 }
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 0.9em;
+  background: #222;
+  color: #ffffff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #0707a4;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/***************************************************FOOTER******************************************************************/
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  margin-top: auto;
+  list-style-type: none;
+  margin-top: -50px;
+}
+
+.footer-container {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.mentions,
+.contact,
+.social-media {
+  margin: 10px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.mentions {
+  position: relative;
+  text-align: center;
+}
+
+.contact27 {
+  text-align: center;
+}
+
+.social-media {
+  text-align: center;
+}
+.social-media .icons {
+  display: flex;
+  gap: 15px; /* Espace entre les icônes */
+  justify-content: center; /* Centre les icônes horizontalement */
+}
+
+.social-media .icons a {
+  color: #ffffff;
+  font-size: 24px; /* Ajuste la taille des icônes */
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.social-media .icons a:hover {
+  color: #dd4a48; /* Couleur de survol */
+}
+
+/**************************************FIN FOOTERR ********************************************/
