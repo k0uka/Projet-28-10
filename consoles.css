@@ -14,12 +14,13 @@ div {
 div img {
     width: 400px;;
     height: 300px;;
-    border: 2px solid white;
-    border-radius: 13px;
-    box-shadow: 4px 7px 0px blue;
+    border: 2px solid #101d39;
+    border-radius: 5px;
+    box-shadow: 4px 7px 0px #d6e10a;
     cursor: pointer;
     margin: 20px;
     transition: 400ms;
+    background-color: #101d39;   
 }
 
 div img:hover {
