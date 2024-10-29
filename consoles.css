@@ -35,7 +35,7 @@ div img {
     display: flex; /* Aligne l'image et la liste côte à côte */
     align-items: flex-start; /* Aligne le contenu en haut */
     background-color:#101d39; /* Couleur de fond du carré */
-    border: 2px solid #101d39; /* Bordure du carré *//
+    border: 2px solid #101d39; /* Bordure du carré */
     padding: 20px; /* Espacement interne */
     margin: 20px; /* Espacement autour du carré */
 }
