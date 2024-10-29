@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #07195a;
+    color: #fff;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
