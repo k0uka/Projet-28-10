@@ -1,9 +1,6 @@
-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
+* {
+    box-sizing: border-box; /* Pour un meilleur contrôle des dimensions */
+    font-family: roboto, cursive;
 }
 
 div img {
@@ -24,6 +21,49 @@ div img {
     padding-top: 0px;
     padding-bottom: 100px;
 }
+
+.card .categories1{
+    background-color: #101d39; /* Couleur de fond du carré */
+    border: 2px solid #101d39; /* Bordure du carré */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+    box-shadow: 4px 7px 0px #d6e10a; /* Ombre */
+    margin: 20px; /* Espacement autour du carré */
+}
+
+.categories1 {
+    display: flex; /* Aligne l'image et la liste côte à côte */
+    align-items: flex-start; /* Aligne le contenu en haut */
+    background-color:#101d39; /* Couleur de fond du carré */
+    border: 2px solid #101d39; /* Bordure du carré *//
+    padding: 20px; /* Espacement interne */
+    margin: 20px; /* Espacement autour du carré */
+}
+
+.categories1 img {
+    width: 400px; /* Largeur de l'image */
+    height: 300px; /* Hauteur de l'image */
+    border: 2px solid #101d39;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px; /* Espacement entre l'image et la liste */
+}
+
+.image-list {
+    list-style-type: none; /* Supprime les puces par défaut */
+    padding-left: 0; /* Supprime le padding par défaut */
+}
+
+.image-list li {
+    padding-left: 25px;
+    font-size: 18px; /* Taille du texte */
+    color: white; /* Couleur du texte */
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+}
+.section a {
+    align-content: center
+}
+
 /***************************************************BARRE MENU******************************************************************/
 
 @import url("https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");

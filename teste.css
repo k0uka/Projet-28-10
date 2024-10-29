@@ -1,30 +1,43 @@
-.image-container {
-    position: relative; /* Permet de positionner le texte par rapport à l'image */
+* {
+    box-sizing: border-box; /* Pour un meilleur contrôle des dimensions */
+}
+
+body {
+    color: white;
+    background-color: #222222;
+    margin: 0; /* Pour éviter les marges par défaut */
+}
+
+.card {
+    background-color: #101d39; /* Couleur de fond du carré */
+    border: 2px solid #101d39; /* Bordure du carré */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+    box-shadow: 4px 7px 0px #d6e10a; /* Ombre */
+    margin: 20px; /* Espacement autour du carré */
+}
+
+.categories1 {
+    display: flex; /* Aligne l'image et la liste côte à côte */
+    align-items: flex-start; /* Aligne le contenu en haut */
+}
+
+.categories1 img {
     width: 400px; /* Largeur de l'image */
     height: 300px; /* Hauteur de l'image */
-    margin: 20px;
-}
-
-.image-container img {
-    width: 100%; /* L'image prend toute la largeur du conteneur */
-    height: 100%; /* L'image prend toute la hauteur du conteneur */
     border: 2px solid #101d39;
     border-radius: 5px;
-    box-shadow: 4px 7px 0px #d6e10a;
     cursor: pointer;
-    transition: 400ms;
-    background-color: #101d39;   
+    margin-right: 20px; /* Espacement entre l'image et la liste */
 }
 
-.image-text {
-    position: absolute; /* Positionnement absolu pour le texte */
-    bottom: 0; /* Positionne le texte en bas */
-    left: 0; /* Aligne le texte à gauche */
-    right: 0; /* Évite que le texte dépasse à droite */
+.image-list {
+    list-style-type: none; /* Supprime les puces par défaut */
+    padding-left: 0; /* Supprime le padding par défaut */
+}
+
+.image-list li {
+    font-size: 18px; /* Taille du texte */
     color: white; /* Couleur du texte */
-    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le texte */
-    padding: 5px; /* Espacement autour du texte */
-    text-align: center; /* Centre le texte */
-    border-radius: 0 0 5px 5px; /* Coins arrondis uniquement en bas */
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
 }
-
