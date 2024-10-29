@@ -11,6 +11,13 @@ body {
   color: #fff;
 }
 
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .menu {
   background-color: #ea4d4dd1;
   font-family: "Press Start 2P", cursive; /* Police rétro */
@@ -19,6 +26,7 @@ body {
   padding: 15px;
   position: fixed;
   z-index: 1000;
+  top: 0;
   width: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Ajoute une ombre sous le menu */
 }
@@ -138,17 +146,24 @@ body {
   margin-right: auto;
 }
 
+/* Corps principal, étend la zone de contenu */
+main {
+  flex: 1;
+  background-color: #07195a;
+  color: #fff;
+}
+
 /***************************************************FOOTER******************************************************************/
 
 footer {
-  margin-top: 1000px;
   background-color: #333;
   color: #fff;
-  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  list-style-type: none;
 }
 
 .footer-container {
-  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -170,4 +185,326 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.mentions {
+  position: relative;
+  text-align: center;
+}
+
+.contact {
+  text-align: left;
+}
+
+.social-media {
+  text-align: center;
+}
+.social-media .icons {
+  display: flex;
+  gap: 15px; /* Espace entre les icônes */
+  justify-content: center; /* Centre les icônes horizontalement */
+}
+
+.social-media .icons a {
+  color: #ffffff;
+  font-size: 24px; /* Ajuste la taille des icônes */
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.social-media .icons a:hover {
+  color: #dd4a48; /* Couleur de survol */
+}
+
+/**************************************FIN FOOTERR ********************************************/
+
+.slogan {
+  position: relative;
+  font-size: 2.5em;
+  font-family: "Press Start 2P", cursive;
+  z-index: 1;
+  margin-top: 200px;
+}
+
+/* Présentation */
+.presentation {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.box-3d {
+  background-color: #ea4d4d;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 0px #101d39, 10px 10px 0px #d6e10a;
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  text-align: center;
+  margin-top: 50px; /* Espace entre le slogan et la box */
+  z-index: 1;
+}
+
+.box-3d p {
+  margin-bottom: 10px;
+}
+
+.read-more {
+  background-color: #101d39;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Press Start 2P", cursive;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.read-more:hover {
+  background-color: #d6e10a;
+  color: #101d39;
+}
+
+/* Bannière avec effet parallaxe */
+.banner-image {
+  background-image: url("photos/index/fpic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 600px; /* Ajuste la hauteur pour intégrer la box */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 200px;
+  padding-top: 200px;
+}
+
+.banner-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+/* Présentation */
+.presentation {
+  padding: 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+/* Catégories */
+.categories {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f8f8f8; /* Couleur de fond claire */
+  border: 2px solid #d3d3d3; /* Bordure gris clair */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 20px;
+  width: 300px; /* Largeur fixe pour chaque carte */
+  margin: 10px; /* Marge autour des cartes */
+  transition: transform 0.3s; /* Animation au survol */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  position: relative;
+  font-family: "Courier New", Courier, monospace; /* Police rétro */
+}
+
+.card h3 {
+  color: #333; /* Couleur du texte */
+  font-size: 1.2em; /* Taille du texte du titre */
+  margin-bottom: 0px; /* Marge en bas du titre */
+  text-align: center;
+}
+
+.card p {
+  color: #555; /* Couleur du texte du paragraphe */
+  margin-top: 20px;
+}
+
+.card-link {
+  display: inline-block;
+  background-color: #007bff; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte */
+  padding: 10px 15px; /* Espacement intérieur du bouton */
+  text-decoration: none; /* Pas de soulignement */
+  border-radius: 5px; /* Coins arrondis du bouton */
+  position: absolute;
+  top: 120px; /* Positionnement en bas de la carte */
+  left: 50%;
+  transform: translateX(-50%); /* Centrage du bouton */
+  transition: background-color 0.3s; /* Animation au survol */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Élévation de la carte au survol */
+}
+
+.card-link:hover {
+  background-color: #0056b3; /* Couleur du bouton au survol */
+}
+
+/* Produits populaires */
+.produits-populaires {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.podium {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.card1 {
+  background-color: #f0e68c; /* Couleur de fond rétro */
+  border: 2px solid #e3b04b; /* Bordure dorée */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre */
+  transition: transform 0.3s ease; /* Animation au survol */
+  width: 250px; /* Largeur standard */
+}
+
+.card1:hover {
+  transform: scale(1.05); /* Agrandir au survol */
+}
+
+.produit-image {
+  width: 100%; /* Prend toute la largeur de la carte */
+  border-radius: 8px; /* Coins arrondis de l'image */
+  margin-bottom: 10px; /* Espace entre l'image et le texte */
+}
+
+.card1 h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card1 p {
+  margin-bottom: 15px;
+}
+
+/* Réseaux sociaux et horaires */
+.social-media a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.hours {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.parallax {
+  background-image: url("photos/index/fpic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 200px; /* Ajuste la hauteur pour intégrer la box */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 200px;
+  padding-top: 200px;
+}
+
+/*contact*/
+
+.contact {
+  padding: 40px;
+  background-color: #03386d;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contact-form,
+.contact-info {
+  width: 100%;
+  margin: 10px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.contact-info h3 {
+  margin-top: 15px;
+  color: #007bff;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.map iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
 }
