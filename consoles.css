@@ -16,7 +16,7 @@ div img {
     height: 300px;;
     border: 2px solid white;
     border-radius: 13px;
-    box-shadow: 4px 7px 0px blue;
+    box-shadow: 4px 7px 0px #d6e10a;
     cursor: pointer;
     margin: 20px;
     transition: 400ms;
