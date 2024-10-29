@@ -252,10 +252,16 @@ body {
 /* JEUX POPULAIRES END */
 
 /* YOUTUBE VIDEO */
+
+section.youtube-vidéo-quizz{
+    display: flex;
+    justify-content: center; /* Centre le conteneur de quiz */
+    align-items: center; /* Centre également verticalement, si nécessaire */
+}
 .youtube-vidéo{
     background-color:#07195a;
     display: flex;
-    align-items: center;
+
 }
 .youtube-vidéo-quizz{
     display: flex;
@@ -273,7 +279,7 @@ body {
 }
 
 .video-container iframe {
-  padding-left: 30%;
+  padding-left: 15%;
 
 }
 /* Espace entre la video et le quizz */
@@ -298,20 +304,32 @@ button {
 
 section.quiz-container-NES{
     background-color:#07195a;
-}
+    display: flex;
+    justify-content: center; /* Centre le conteneur de quiz */
+    align-items: center; /* Centre également verticalement, si nécessaire */
 
+}
+.quiz-container h2{
+    font-size: 20px;
+    font-family: "Press Start 2P", cursive;
+    cursor: pointer;
+}
 .quiz-container{
-    width: 300px; /* Définir une largeur fixe */
-    height: 300px; /* Définir une hauteur fixe pour faire un carré */
-    margin-bottom: 150px;
+    font-family: "roboto", cursive;
+    width: 600px; /* Largeur fixe */
+    height: 300px; /* Hauteur fixe pour faire un carré */
+    margin-bottom: 160px;
     display: flex;
     background: #ea4d4d;
-    padding: 15px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    box-shadow: 0 4px 10px white;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 8px; /* Optionnel : arrondir les coins */
 }
-
+.quiz-container .quiz-from{
+    text-align: left;
+}
 
 .quiz-container h2 {
     text-align: center;

@@ -1,44 +1,30 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
+.image-container {
+    position: relative; /* Permet de positionner le texte par rapport à l'image */
+    width: 400px; /* Largeur de l'image */
+    height: 300px; /* Hauteur de l'image */
+    margin: 20px;
 }
 
-.container {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 320px; /* Largeur fixe */
-    display: flex;
-    flex-direction: column;
-}
-
-.quiz-container {
-    margin-top: 10px; /* Espacement entre la vidéo et le quiz */
-    text-align: center;
-}
-
-button {
-    margin-top: 10px;
-    padding: 10px;
-    border: none;
-    background-color: #007BFF;
-    color: white;
+.image-container img {
+    width: 100%; /* L'image prend toute la largeur du conteneur */
+    height: 100%; /* L'image prend toute la hauteur du conteneur */
+    border: 2px solid #101d39;
     border-radius: 5px;
+    box-shadow: 4px 7px 0px #d6e10a;
     cursor: pointer;
+    transition: 400ms;
+    background-color: #101d39;   
 }
 
-button:hover {
-    background-color: #0056b3;
+.image-text {
+    position: absolute; /* Positionnement absolu pour le texte */
+    bottom: 0; /* Positionne le texte en bas */
+    left: 0; /* Aligne le texte à gauche */
+    right: 0; /* Évite que le texte dépasse à droite */
+    color: white; /* Couleur du texte */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le texte */
+    padding: 5px; /* Espacement autour du texte */
+    text-align: center; /* Centre le texte */
+    border-radius: 0 0 5px 5px; /* Coins arrondis uniquement en bas */
 }
 
-#result {
-    font-size: 16px;
-    color: #333;
-    margin-top: 10px; /* Espacement pour le résultat */
-}
