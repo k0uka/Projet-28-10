@@ -28,12 +28,42 @@
                         <li>NES Four Score</li>
                     </ul>
                 </div>
+                <div class="Jeux-populaires">
+                    <h3>Jeux emblématique de la NES</h3>
+                    <ul>
+                        <li><a href="https://www.amazon.fr/Nintendo-Super-Mario-Bros/dp/B00004SVV7" target="_blank">Super Mario Bros.</a></li>
+                        <li><a href="https://www.retroplace.com/fr/jeux/169079--the-legend-of-zelda?srsltid=AfmBOorflRXfRtQtegOkXkbV0pMfScSxMYq4IZcZiZ1TlrPCcFI7_UqE" target="_blank">The Legend of Zelda.</a></li>
+                        <li><a href="https://www.amazon.fr/Metroid/dp/B00004SVYF" target="_blank">Metroid</a></li>
+                    </ul>
+                </div>
                 </form>
                 </div>
         </div>
-
     </section>
-
-    <script src="./js/app.js"></script>
+    <section class="youtube-vidéo-quizz"> 
+        <div class="video-container">
+            <h2>Nintendo NES - Console de légende :</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lov03zIRFDA?si=wE0bUMpXB8A-H0DF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="quiz-container">
+            <h2>Mini Quiz: Quel est le meilleur jeu NES ?</h2>
+            <form id="quiz-form">
+                <label>
+                    <input type="radio" name="answer" value="Super Mario Bros."> Super Mario Bros.
+                </label><br>
+                <label>
+                    <input type="radio" name="answer" value="The Legend of Zelda"> The Legend of Zelda
+                </label><br>
+                <label>
+                    <input type="radio" name="answer" value="Metroid"> Metroid
+                </label><br>
+                <label>
+                    <input type="radio" name="answer" value="Duck Hunt"> Duck Hunt
+                </label><br>
+                <button type="submit">Envoyer</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </section>    
 </body>
 </html>
