@@ -211,6 +211,9 @@ footer {
   color: #fff;
   padding: 20px;
   margin-top: auto;
+  margin-bottom: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
   list-style-type: none;
   margin-top: 200px;
 }

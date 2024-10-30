@@ -1,86 +1,83 @@
 * {
-    box-sizing: border-box; /* Pour un meilleur contrôle des dimensions */
+  box-sizing: border-box; /* Pour un meilleur contrôle des dimensions */
 }
-main{
-    font-family: roboto, cursive;
+main {
+  font-family: roboto, cursive;
 }
 div img {
-    width: 400px;;
-    height: 300px;;
-    border: 2px solid #101d39;
-    border-radius: 5px;
-    box-shadow: 4px 7px 0px #d6e10a;
-    cursor: pointer;
-    margin: 20px;
-    transition: 400ms;
-    background-color: #101d39;
+  width: 400px;
+  height: 300px;
+  border: 2px solid #101d39;
+  border-radius: 5px;
+  box-shadow: 4px 7px 0px #d6e10a;
+  cursor: pointer;
+  margin: 20px;
+  transition: 400ms;
+  background-color: #101d39;
 }
 
-.teste{
-    color:#07195a;
-    background-color: #07195a;
-    padding-top: 0px;
-    padding-bottom: 100px;
+.teste {
+  color: #07195a;
+  background-color: #07195a;
+  padding-top: 0px;
+  padding-bottom: 100px;
 }
 
 .card .categories1 {
-    background-color: #101d39; /* Couleur de fond du carré */
-    border: 2px solid #101d39; /* Bordure du carré */
-    border-radius: 5px; /* Coins arrondis */
-    padding: 20px; /* Espacement interne */
-    box-shadow: 4px 7px 0px #d6e10a; /* Ombre */
-    margin: 20px; /* Espacement autour du carré */
+  background-color: #101d39; /* Couleur de fond du carré */
+  border: 2px solid #101d39; /* Bordure du carré */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 20px; /* Espacement interne */
+  box-shadow: 4px 7px 0px #d6e10a; /* Ombre */
+  margin: 20px; /* Espacement autour du carré */
 }
 
 .categories1 {
-    display: flex; /* Aligne l'image et la liste côte à côte */
-    align-items: flex-start; /* Aligne le contenu en haut */
-    background-color:#101d39; /* Couleur de fond du carré */
-    border: 2px solid #101d39; /* Bordure du carré */
-    padding: 20px; /* Espacement interne */
-    margin: 20px; /* Espacement autour du carré */
+  display: flex; /* Aligne l'image et la liste côte à côte */
+  align-items: flex-start; /* Aligne le contenu en haut */
+  background-color: #101d39; /* Couleur de fond du carré */
+  border: 2px solid #101d39; /* Bordure du carré */
+  padding: 20px; /* Espacement interne */
+  margin: 20px; /* Espacement autour du carré */
 }
 
 .categories1 img {
-    width: 400px; /* Largeur de l'image */
-    height: 300px; /* Hauteur de l'image */
-    border: 2px solid #101d39;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 20px; /* Espacement entre l'image et la liste */
+  width: 400px; /* Largeur de l'image */
+  height: 300px; /* Hauteur de l'image */
+  border: 2px solid #101d39;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px; /* Espacement entre l'image et la liste */
 }
 
-
 .image-list {
-    list-style-type: none; /* Supprime les puces par défaut */
-    padding-left: 0; /* Supprime le padding par défaut */
+  list-style-type: none; /* Supprime les puces par défaut */
+  padding-left: 0; /* Supprime le padding par défaut */
 }
 
 .image-list li {
-    padding-left: 25px;
-    font-size: 18px; /* Taille du texte */
-    color: white; /* Couleur du texte */
-    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+  padding-left: 25px;
+  font-size: 18px; /* Taille du texte */
+  color: white; /* Couleur du texte */
+  margin-bottom: 10px; /* Espacement entre les éléments de la liste */
 }
 .categories1 a {
-    padding: 135px;
+  padding: 135px;
 }
 .title {
   font-size: 20px;
   font-family: "Press Start 2P", cursive; /* Police rétro */
   padding-left: 660px;
   padding-top: 20px;
-  padding-bottom: 20px
-  
+  padding-bottom: 20px;
 }
 
 /* Categories 2 */
 
 .categories2 a {
   padding: 45px;
-
 }
-.card .categories2{
+.card .categories2 {
   background-color: #101d39; /* Couleur de fond du carré */
   border: 2px solid #101d39; /* Bordure du carré */
   border-radius: 5px; /* Coins arrondis */
@@ -92,7 +89,7 @@ div img {
 .categories2 {
   display: flex; /* Aligne l'image et la liste côte à côte */
   align-items: flex-start; /* Aligne le contenu en haut */
-  background-color:#101d39; /* Couleur de fond du carré */
+  background-color: #101d39; /* Couleur de fond du carré */
   border: 2px solid #101d39; /* Bordure du carré */
   padding: 20px; /* Espacement interne */
   margin: 20px; /* Espacement autour du carré */
@@ -111,7 +108,6 @@ div img {
 /* categories 3 */
 .categories3 a {
   padding: 47px;
-
 }
 .card .categories3 {
   background-color: #101d39; /* Couleur de fond du carré */
@@ -125,7 +121,7 @@ div img {
 .categories3 {
   display: flex; /* Aligne l'image et la liste côte à côte */
   align-items: flex-start; /* Aligne le contenu en haut */
-  background-color:#101d39; /* Couleur de fond du carré */
+  background-color: #101d39; /* Couleur de fond du carré */
   border: 2px solid #101d39; /* Bordure du carré */
   padding: 20px; /* Espacement interne */
   margin: 20px; /* Espacement autour du carré */
@@ -150,7 +146,7 @@ div img {
   box-sizing: border-box;
 }
 
- body {
+body {
   background-color: #07195a;
   color: #fff;
 }
