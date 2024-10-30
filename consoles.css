@@ -23,7 +23,7 @@ div img {
     padding-bottom: 100px;
 }
 
-.card .categories1{
+.card .categories1 {
     background-color: #101d39; /* Couleur de fond du carré */
     border: 2px solid #101d39; /* Bordure du carré */
     border-radius: 5px; /* Coins arrondis */
@@ -50,6 +50,7 @@ div img {
     margin-right: 20px; /* Espacement entre l'image et la liste */
 }
 
+
 .image-list {
     list-style-type: none; /* Supprime les puces par défaut */
     padding-left: 0; /* Supprime le padding par défaut */
@@ -61,10 +62,84 @@ div img {
     color: white; /* Couleur du texte */
     margin-bottom: 10px; /* Espacement entre les éléments de la liste */
 }
-.section a {
-    align-content: center
+.categories1 a {
+    padding: 135px;
+}
+.title {
+  font-size: 20px;
+  font-family: "Press Start 2P", cursive; /* Police rétro */
+  padding-left: 660px;
+  padding-top: 20px;
+  padding-bottom: 20px
+  
 }
 
+/* Categories 2 */
+
+.categories2 a {
+  padding: 45px;
+
+}
+.card .categories2{
+  background-color: #101d39; /* Couleur de fond du carré */
+  border: 2px solid #101d39; /* Bordure du carré */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 20px; /* Espacement interne */
+  box-shadow: 4px 7px 0px #d6e10a; /* Ombre */
+  margin: 20px; /* Espacement autour du carré */
+}
+
+.categories2 {
+  display: flex; /* Aligne l'image et la liste côte à côte */
+  align-items: flex-start; /* Aligne le contenu en haut */
+  background-color:#101d39; /* Couleur de fond du carré */
+  border: 2px solid #101d39; /* Bordure du carré */
+  padding: 20px; /* Espacement interne */
+  margin: 20px; /* Espacement autour du carré */
+}
+
+.categories2 img {
+  width: 400px; /* Largeur de l'image */
+  height: 300px; /* Hauteur de l'image */
+  border: 2px solid #101d39;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 220px; /* Espacement entre l'image et la liste */
+}
+/* fin categories2 */
+
+/* categories 3 */
+.categories3 a {
+  padding: 47px;
+
+}
+.card .categories3 {
+  background-color: #101d39; /* Couleur de fond du carré */
+  border: 2px solid #101d39; /* Bordure du carré */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 20px; /* Espacement interne */
+  box-shadow: 4px 7px 0px #d6e10a; /* Ombre */
+  margin: 20px; /* Espacement autour du carré */
+}
+
+.categories3 {
+  display: flex; /* Aligne l'image et la liste côte à côte */
+  align-items: flex-start; /* Aligne le contenu en haut */
+  background-color:#101d39; /* Couleur de fond du carré */
+  border: 2px solid #101d39; /* Bordure du carré */
+  padding: 20px; /* Espacement interne */
+  margin: 20px; /* Espacement autour du carré */
+}
+
+.categories3 img {
+  width: 400px; /* Largeur de l'image */
+  height: 300px; /* Hauteur de l'image */
+  border: 2px solid #101d39;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 225px; /* Espacement entre l'image et la liste */
+}
+/* fin categories 3 */
 /***************************************************BARRE MENU******************************************************************/
 
 @import url("https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
