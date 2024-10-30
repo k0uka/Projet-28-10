@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
- body {
+body {
   background-color: #07195a;
   color: #fff;
 }
@@ -181,7 +181,7 @@ main {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 5px 5px 0px #101d39, 10px 10px 0px #d6e10a;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   max-width: 600px;
   text-align: center;
   margin-top: 150px; /* Espace entre le slogan et la box */
@@ -266,7 +266,7 @@ main {
   transition: transform 0.3s; /* Animation au survol */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
   position: relative;
-  font-family: "Courier New", Courier, monospace; /* Police rétro */
+  font-family: "Roboto", sans-serif; /* Police rétro */
 }
 
 .card h3 {
@@ -551,7 +551,7 @@ main {
   margin-top: 5px;
   border: none;
   border-radius: 5px;
-  font-family: inherit;
+  font-family: "Roboto", sans-serif;
   font-size: 0.9em;
   background: #222;
   color: #ffffff;
@@ -609,7 +609,7 @@ main {
   margin-top: 5px;
   border: none;
   border-radius: 5px;
-  font-family: inherit;
+  font-family: "Roboto", sans-serif;
   font-size: 0.9em;
   background: #222;
   color: #ffffff;
