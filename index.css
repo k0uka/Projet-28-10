@@ -322,6 +322,7 @@ main {
   display: flex;
   justify-content: center;
   position: relative;
+  padding-bottom: 20px;
 }
 
 .card1 {
@@ -446,6 +447,8 @@ main {
   color: #ff6b6b;
   text-align: center;
   margin-top: -200px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .actualites h2 {
@@ -455,15 +458,16 @@ main {
 }
 
 .scroll-container {
+  display: flex;
   white-space: nowrap;
   overflow: hidden;
-  margin-top: -50px;
+  margin-top: 50px;
 }
 
 .scroll-content {
-  display: inline-block;
-  padding-left: 100%; /* démarre le texte en dehors de la vue */
-  animation: scroll-left 15s linear infinite;
+  display: flex;
+  /* padding-left: 100%; démarre le texte en dehors de la vue */
+  animation: scroll-left 20s linear infinite;
 }
 
 .actu-card {
@@ -489,15 +493,17 @@ main {
 
 /*contact*/
 
-.contact {
+.contact1 {
   padding: 0px 0;
   background-color: #b86060;
   text-align: center;
   color: #ffffff;
-  margin-top: -500px;
+  margin-top: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.contact h2 {
+.contact1 h2 {
   font-size: 2.5em;
   color: #eeecf6;
   font-family: "Press Start 2P", cursive;
@@ -539,7 +545,7 @@ main {
 .contact-form label {
   display: block;
   font-weight: bold;
-  color: #a22727;
+  color: #ebebeb;
   font-size: 0.9em;
   margin-top: 10px;
 }
@@ -579,7 +585,7 @@ main {
   color: white;
 }
 
-.contact-info p {
+.contact1-info p {
   font-size: 0.95em;
   color: #dddddd;
   margin: 8px 0;
@@ -594,7 +600,7 @@ main {
   box-shadow: 0 4px 8px rgba(186, 16, 16, 0.4);
 }
 
-.contact-form label {
+.contact1-form label {
   display: block;
   font-weight: bold;
   color: #ffffff;
@@ -602,8 +608,8 @@ main {
   margin-top: 10px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact1-form input,
+.contact1-form textarea {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
@@ -615,8 +621,8 @@ main {
   color: #ffffff;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
+.contact1-form input:focus,
+.contact1-form textarea:focus {
   outline: 2px solid #0707a4;
 }
 
@@ -697,7 +703,7 @@ a:hover {
 }
 
 .picto1 {
-  width: 100px;
-  margin-top: -50px;
-  margin-left: 400px;
+  width: 60px;
+  margin-top: -80px;
+  margin-left: 300px;
 }
