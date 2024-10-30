@@ -705,5 +705,6 @@ a:hover {
 .picto1 {
   width: 60px;
   margin-top: -80px;
-  margin-left: 300px;
+  margin-left: 330px;
+  padding-bottom: 5px;
 }

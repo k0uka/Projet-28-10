@@ -142,11 +142,11 @@ body {
 }
 
 .picto {
-  width: 60px;
+  width: 80px;
   z-index: 100;
   padding-top: 0px;
   text-align: center;
-  margin-left: 710px;
+  margin-left: 695px;
 }
 
 .container {
