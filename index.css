@@ -689,3 +689,16 @@ a:hover {
 }
 
 /**************************************FIN FOOTERR ********************************************/
+
+.picto {
+  width: 60px;
+  z-index: 100;
+  padding-top: 50px;
+}
+
+.picto1 {
+  width: 60px;
+  margin-top: -50px;
+  margin-left: 400px;
+  background-color: white;
+}
