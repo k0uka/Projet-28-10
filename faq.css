@@ -143,9 +143,6 @@ body {
 
 .picto {
   width: 80px;
-  z-index: 100;
-  padding-top: 0px;
-  text-align: center;
   margin-left: 695px;
 }
 
@@ -220,6 +217,10 @@ footer {
   flex-wrap: wrap;
 }
 
+.contact15 {
+  text-align: center;
+}
+
 .mentions,
 .contact,
 .social-media {
@@ -267,7 +268,3 @@ h3 {
 .social-media .icons a:hover {
   color: #dd4a48; /* Couleur de survol */
 }
-/* ol,
-ul {
-  padding-left: 20px; /* Ajout d'un espacement pour les listes */
-/* } */
