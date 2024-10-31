@@ -24,7 +24,7 @@ body {
 
 .menu {
   background-color: #ea4d4dd1;
-  font-family: "Press Start 2P", cursive; /* Police rétro */
+  font-family: "Press Start 2P", cursive;
   display: flex;
   justify-content: center;
   padding: 15px;
@@ -32,7 +32,7 @@ body {
   z-index: 1000;
   top: 0;
   width: 100%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Ajoute une ombre sous le menu */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .menu ul {
@@ -60,15 +60,15 @@ body {
 .menu ul li a::before {
   content: "➤"; /* Triangle ou flèche */
   position: absolute;
-  left: 10px; /* Ajuste pour positionner la flèche */
-  top: 50%; /* Aligne verticalement la flèche au centre du texte */
-  transform: translateY(-50%); /* Centre la flèche verticalement */
-  opacity: 0; /* Invisible par défaut */
-  transition: opacity 0.3s; /* Pour une transition douce */
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .menu ul li:hover > a::before {
-  opacity: 1; /* Montre la flèche au survol */
+  opacity: 1;
 }
 
 .menu ul li a:hover {
@@ -84,18 +84,18 @@ body {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #ffffff; /* Couleur LED blanche */
+  background-color: #ffffff;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
 }
 
 .menu ul li a:hover::after {
-  transform: scaleX(1); /* La ligne s'étend sous le texte */
+  transform: scaleX(1);
 }
 
 .submenu {
-  position: relative; /* Nécessaire pour le sous-menu */
+  position: relative;
 }
 
 .submenu ul {
@@ -106,11 +106,11 @@ body {
   background-color: #ea4d4dcf;
   padding: 10px;
   border-radius: 5px;
-  z-index: 999; /* Assure que le sous-menu est au-dessus des autres éléments */
+  z-index: 999;
 }
 
 .submenu:hover ul {
-  display: block; /* Affiche le sous-menu au survol */
+  display: block;
 }
 
 .submenu ul li {
@@ -118,25 +118,25 @@ body {
 }
 
 .submenu ul li a {
-  padding: 10px 20px; /* Espace pour le sous-menu */
-  position: relative; /* Nécessaire pour positionner la flèche */
-  padding-left: 30px; /* Espace pour la flèche dans le sous-menu */
+  padding: 10px 20px;
+  position: relative;
+  padding-left: 30px;
 }
 
 .submenu ul li a::before {
-  content: "➤"; /* Triangle ou flèche */
+  content: "➤";
   position: absolute;
-  left: 10px; /* Positionne la flèche à gauche du texte */
-  top: 50%; /* Aligne verticalement la flèche au centre du texte */
+  left: 10px;
+  top: 50%;
   transform: translateY(
     -50%
   ); /* Ajuste la flèche pour qu'elle soit bien centrée verticalement */
-  opacity: 0; /* Invisible par défaut */
-  transition: opacity 0.3s; /* Pour une transition douce */
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .submenu ul li:hover > a::before {
-  opacity: 1; /* Montre la flèche au survol */
+  opacity: 1;
 }
 
 .submenu ul li a:hover {
@@ -146,7 +146,7 @@ body {
 }
 
 .menu .logo {
-  height: 100px; /* Ajuste la hauteur selon tes besoins */
+  height: 100px;
   margin-right: auto;
 }
 
@@ -184,7 +184,7 @@ main {
   font-family: "Roboto", sans-serif;
   max-width: 600px;
   text-align: center;
-  margin-top: 150px; /* Espace entre le slogan et la box */
+  margin-top: 150px;
   z-index: 1;
 }
 
@@ -214,7 +214,7 @@ main {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 600px; /* Ajuste la hauteur pour intégrer la box */
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -257,46 +257,46 @@ main {
 }
 
 .card {
-  background-color: #f8f8f8; /* Couleur de fond claire */
-  border: 2px solid #d3d3d3; /* Bordure gris clair */
-  border-radius: 8px; /* Coins arrondis */
+  background-color: #f8f8f8;
+  border: 2px solid #d3d3d3;
+  border-radius: 8px;
   padding: 20px;
-  width: 300px; /* Largeur fixe pour chaque carte */
-  margin: 10px; /* Marge autour des cartes */
-  transition: transform 0.3s; /* Animation au survol */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  width: 300px;
+  margin: 10px;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   position: relative;
-  font-family: "Roboto", sans-serif; /* Police rétro */
+  font-family: "Roboto", sans-serif;
 }
 
 .card h3 {
-  color: #333; /* Couleur du texte */
-  font-size: 1.2em; /* Taille du texte du titre */
-  margin-bottom: 0px; /* Marge en bas du titre */
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 0px;
   text-align: center;
 }
 
 .card p {
-  color: #555; /* Couleur du texte du paragraphe */
+  color: #555;
   margin-top: 20px;
 }
 
 .card-link {
   display: inline-block;
-  background-color: #007bff; /* Couleur de fond du bouton */
-  color: white; /* Couleur du texte */
-  padding: 10px 15px; /* Espacement intérieur du bouton */
-  text-decoration: none; /* Pas de soulignement */
-  border-radius: 5px; /* Coins arrondis du bouton */
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
   position: absolute;
-  top: 120px; /* Positionnement en bas de la carte */
+  top: 120px;
   left: 50%;
   transform: translateX(-50%); /* Centrage du bouton */
-  transition: background-color 0.3s; /* Animation au survol */
+  transition: background-color 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Élévation de la carte au survol */
+  transform: translateY(-5px);
 }
 
 .card-link:hover {
@@ -326,24 +326,24 @@ main {
 }
 
 .card1 {
-  background-color: #da5e5e; /* Couleur de fond rétro */
-  border: 2px solid #e3b04b; /* Bordure dorée */
+  background-color: #da5e5e;
+  border: 2px solid #e3b04b;
   border-radius: 10px;
   padding: 20px;
   margin: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre */
-  transition: transform 0.3s ease; /* Animation au survol */
-  width: 250px; /* Largeur standard */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  width: 250px;
 }
 
 .card1:hover {
-  transform: scale(1.05); /* Agrandir au survol */
+  transform: scale(1.05);
 }
 
 .produit-image {
-  width: 100%; /* Prend toute la largeur de la carte */
-  border-radius: 8px; /* Coins arrondis de l'image */
-  margin-bottom: 10px; /* Espace entre l'image et le texte */
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .card1 h3 {
@@ -372,7 +372,7 @@ main {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 200px; /* Ajuste la hauteur pour intégrer la box */
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -389,7 +389,7 @@ main {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 200px; /* Ajuste la hauteur pour intégrer la box */
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -406,7 +406,7 @@ main {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 200px; /* Ajuste la hauteur pour intégrer la box */
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -423,7 +423,7 @@ main {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 200px; /* Ajuste la hauteur pour intégrer la box */
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -466,7 +466,6 @@ main {
 
 .scroll-content {
   display: flex;
-  /* padding-left: 100%; démarre le texte en dehors de la vue */
   animation: scroll-left 20s linear infinite;
 }
 
@@ -680,7 +679,7 @@ a:hover {
 .social-media .icons {
   display: flex;
   gap: 15px; /* Espace entre les icônes */
-  justify-content: center; /* Centre les icônes horizontalement */
+  justify-content: center;
 }
 
 .social-media .icons a {
@@ -691,7 +690,7 @@ a:hover {
 }
 
 .social-media .icons a:hover {
-  color: #dd4a48; /* Couleur de survol */
+  color: #dd4a48;
 }
 
 /**************************************FIN FOOTERR ********************************************/
