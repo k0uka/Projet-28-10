@@ -229,6 +229,7 @@ body {
     padding-left: 5px;
 }
 /* PRODUCT DETAILS */
+
 /* JEUX POPULAIRES */
 .main-wrap .product .product-details .Jeux-populaires h3{
     font-size: 20px;
@@ -246,10 +247,10 @@ body {
     color:black;
 }
 .main-wrap .product .product-details .Jeux-populaires ul li a {
-    color: blue; /* Assurez-vous que le texte des li est aussi en noir */
+    color: blue;
 }
 
-/* JEUX POPULAIRES END */
+/* JEUX POPULAIRES FIN */
 
 /* YOUTUBE VIDEO */
 
@@ -258,10 +259,10 @@ section.youtube-vidéo-quizz{
     justify-content: center; /* Centre le conteneur de quiz */
     align-items: center; /* Centre également verticalement, si nécessaire */
 }
-.youtube-vidéo{
-    background-color:#07195a;
-    display: flex;
 
+.youtube-vidéo{
+
+    display: flex;
 }
 .youtube-vidéo-quizz{
     display: flex;
@@ -290,6 +291,7 @@ section.youtube-vidéo-quizz{
 /* end */
 
 /* Youtube end */
+
 /* Quiz */
 
 button {
