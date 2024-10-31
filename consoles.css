@@ -2,7 +2,7 @@
   box-sizing: border-box; /* Pour un meilleur contrôle des dimensions */
 }
 main {
-  font-family: roboto, cursive;
+  font-family: roboto, cursive; 
 }
 div img {
   width: 400px;
